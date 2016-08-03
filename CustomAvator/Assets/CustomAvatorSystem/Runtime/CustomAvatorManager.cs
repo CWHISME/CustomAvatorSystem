@@ -60,7 +60,6 @@ namespace CustomAvator.Runtime
                     combineInstances.Add(com);
 
                     FindBones(bones, renders[i].bones);
-                    //RemoveRepeatBones(bones, renders[i].bones);
                 }
 
             }
@@ -89,47 +88,5 @@ namespace CustomAvator.Runtime
             }
         }
 
-        private Transform[] FindBones(Transform root, IEnumerable<string> boneNames)
-        {
-            List<Transform> bones = new List<Transform>(30);
-
-            List<Transform> boneList = new List<Transform>(root.GetComponentsInChildren<Transform>(true));
-
-            foreach (string boneName in boneNames)
-            {
-                Transform trans = boneList.Find(delegate (Transform t)
-                {
-                    if (0 == string.Compare(boneName, t.name, false))
-                    {
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                });
-
-                if (null != trans)
-                {
-                    bones.Add(trans);
-                }
-                else
-                {
-                    Debug.LogError("cant find bone:" + boneName);
-                }
-            }
-
-            return bones.ToArray();
-        }
-
-        private static List<string> GetBoneNames(IEnumerable<Transform> bones)
-        {
-            List<Transform> tmp = new List<Transform>(bones);
-
-            return tmp.ConvertAll<string>(delegate (Transform trans)
-            {
-                return trans.name;
-            });
-        }
     }
 }
