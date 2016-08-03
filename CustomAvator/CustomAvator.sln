@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAvator.CSharp", "CustomAvator.CSharp.csproj", "{B7EB3886-DF23-AF1F-B4F5-ADCB6512948E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAvator.CSharp.Editor", "CustomAvator.CSharp.Editor.csproj", "{347BBCEE-1CE3-0751-046C-26DF65E07AD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7EB3886-DF23-AF1F-B4F5-ADCB6512948E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7EB3886-DF23-AF1F-B4F5-ADCB6512948E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7EB3886-DF23-AF1F-B4F5-ADCB6512948E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7EB3886-DF23-AF1F-B4F5-ADCB6512948E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{347BBCEE-1CE3-0751-046C-26DF65E07AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{347BBCEE-1CE3-0751-046C-26DF65E07AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{347BBCEE-1CE3-0751-046C-26DF65E07AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{347BBCEE-1CE3-0751-046C-26DF65E07AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
